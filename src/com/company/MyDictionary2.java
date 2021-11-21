@@ -77,7 +77,7 @@ public class MyDictionary2 {
         dict.remove(key);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
         for (String k: dict.keySet()) {
-            bufferedWriter.append(k+"-"+dict.get(k));
+            bufferedWriter.append(k+"-"+dict.get(k)+"\n");
         }
         bufferedWriter.close();
     }
